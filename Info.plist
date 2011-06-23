@@ -33,7 +33,7 @@
 				<key>LatencyTimer</key>
 				<integer>8</integer>
 				<key>PortName</key>
-				<string>PSR-800</string>
+				<string>GRE-PSR-800</string>
 			</dict>
 			<key>IOProviderClass</key>
 			<string>IOUSBInterface</string>

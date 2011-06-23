@@ -92,4 +92,11 @@ Full Speed device @ 4 (0xFD313000): ............................................
 So, it looks to me like the important parts are:
 Vendor 3223 (decimal), Product 8, and Interface 1 for the serial port.
 
-But, nothing has happened yet.  I need to try rebooting the box first.  But, it's busy doing something else right now.
+so, then we try:
+# kextload /System/Library/Extensions/FTDIUSBSerialDriver.kext
+
+which looks like it loaded a driver, kernel.log: 
+kernel[0]: FTDIUSBSerialDriver:        0  c970008 start - ok
+
+Which makes a horribly named PSR-800gobblidlygook name.  It has to be as long as or longer than "usbserial".. shiiiiity driver code.
+
