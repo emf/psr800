@@ -1,0 +1,95 @@
+Oh god..
+
+this is what i've done to (hopefully) make this scanner work on OSX.
+
+/System/Library/Extensions/FTDIUSBSerialDriver.kext/Contents/Info.plist
+
+copy the one in this directory over there after you install the driver from 
+http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_2_16.dmg
+
+(see the Tech Note TN_105 at http://www.ftdichip.com/Support/Documents/TechnicalNotes/TN_105%20Adding%20Support%20for%20New%20FTDI%20Devices%20to%20Mac%20Driver.pdf)
+
+The device information is:
+Full Speed device @ 4 (0xFD313000): .............................................   Composite device: "GRECOM PSR-8OO  Scanner\000\000\000\000\000"
+    Port Information:   0x0018
+           Not Captive
+           External Device
+           Connected
+           Enabled
+    Device Descriptor   
+        Descriptor Version Number:   0x0200
+        Device Class:   0   (Composite)
+        Device Subclass:   0
+        Device Protocol:   0
+        Device MaxPacketSize:   8
+        Device VendorID/ProductID:   0x0C97/0x0008   (unknown vendor)
+        Device Version Number:   0x0001
+        Number of Configurations:   1
+        Manufacturer String:   1 "GRECOM\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+        Product String:   2 "GRECOM PSR-8OO  Scanner\000\000\000\000\000"
+        Serial Number String:   0 (none)
+    Configuration Descriptor: .......................................   "GRECOM PSR-8OO  Scanner\000\000\000\000\000"
+        Length (and contents):   89
+            Raw Descriptor (hex)    0000: 09 02 59 00 02 01 02 C0  FA 09 04 00 00 02 08 06  
+            Raw Descriptor (hex)    0010: 50 00 07 05 81 02 40 00  01 07 05 01 02 40 00 01  
+            Raw Descriptor (hex)    0020: 08 11 01 02 02 02 01 00  09 04 01 00 03 02 02 01  
+            Raw Descriptor (hex)    0030: 00 05 24 00 10 01 04 24  02 02 05 24 06 00 01 05  
+            Raw Descriptor (hex)    0040: 24 01 00 01 07 05 82 03  08 00 02 07 05 03 02 40  
+            Raw Descriptor (hex)    0050: 00 00 07 05 83 02 40 00  00 
+        Number of Interfaces:   2
+        Configuration Value:   1
+        Attributes:   0xC0 (self-powered)
+        MaxPower:   500 ma
+        Interface #0 - Mass Storage/SCSI   
+            Alternate Setting   0
+            Number of Endpoints   2
+            Interface Class:   8   (Mass Storage)
+            Interface Subclass;   6   (SCSI)
+            Interface Protocol:   80
+            Endpoint 0x81 - Bulk Input   
+                Address:   0x81  (IN)
+                Attributes:   0x02  (Bulk no synchronization data endpoint)
+                Max Packet Size:   64
+                Polling Interval:   1 ms
+            Endpoint 0x01 - Bulk Output   
+                Address:   0x01  (OUT)
+                Attributes:   0x02  (Bulk no synchronization data endpoint)
+                Max Packet Size:   64
+                Polling Interval:   1 ms
+        Raw Descriptor (hex)   0000: 08 11 01 02 02 02 01 00  
+        Interface #1 - Communications-Control   
+            Alternate Setting   0
+            Number of Endpoints   3
+            Interface Class:   2   (Communications-Control)
+            Interface Subclass;   2
+            Interface Protocol:   1
+            Comm Class Header Functional Descriptor   
+                Raw Descriptor (hex)   0000: 05 24 00 10 01 
+            Comm Class Abstract Control Management Functional Descriptor   
+                Raw Descriptor (hex)   0000: 04 24 02 02 
+            Comm Class Union Functional Descriptor   
+                Raw Descriptor (hex)   0000: 05 24 06 00 01 
+            Comm Class Call Management Functional Descriptor   
+                Raw Descriptor (hex)   0000: 05 24 01 00 01 
+            Endpoint 0x82 - Interrupt Input   
+                Address:   0x82  (IN)
+                Attributes:   0x03  (Interrupt no synchronization data endpoint)
+                Max Packet Size:   8
+                Polling Interval:   2 ms
+            Endpoint 0x03 - Bulk Output   
+                Address:   0x03  (OUT)
+                Attributes:   0x02  (Bulk no synchronization data endpoint)
+                Max Packet Size:   64
+                Polling Interval:   0 ms
+            Endpoint 0x83 - Bulk Input   
+                Address:   0x83  (IN)
+                Attributes:   0x02  (Bulk no synchronization data endpoint)
+                Max Packet Size:   64
+                Polling Interval:   0 ms
+
+
+
+So, it looks to me like the important parts are:
+Vendor 3223 (decimal), Product 8, and Interface 1 for the serial port.
+
+But, nothing has happened yet.  I need to try rebooting the box first.  But, it's busy doing something else right now.
