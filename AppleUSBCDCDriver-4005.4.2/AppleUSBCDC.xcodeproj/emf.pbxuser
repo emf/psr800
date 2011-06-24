@@ -1,0 +1,129 @@
+// !$*UTF8*$!
+{
+	089C1669FE841209C02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Development;
+		activeTarget = D2277A0007417BF9002AF184 /* Build All */;
+		codeSenseManager = 91BB526D13B54C63009FE40E /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1090,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 330648645;
+			PBXWorkspaceStateSaveDate = 330648645;
+		};
+		perUserProjectItems = {
+			91BB527C13B55174009FE40E /* XCBuildMessageTextBookmark */ = 91BB527C13B55174009FE40E /* XCBuildMessageTextBookmark */;
+			91BB527D13B55174009FE40E /* PBXTextBookmark */ = 91BB527D13B55174009FE40E /* PBXTextBookmark */;
+			91BB528013B55182009FE40E /* XCBuildMessageTextBookmark */ = 91BB528013B55182009FE40E /* XCBuildMessageTextBookmark */;
+			91BB528113B55182009FE40E /* PBXTextBookmark */ = 91BB528113B55182009FE40E /* PBXTextBookmark */;
+		};
+		sourceControlManager = 91BB526C13B54C63009FE40E /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	91BB526C13B54C63009FE40E /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	91BB526D13B54C63009FE40E /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	91BB527C13B55174009FE40E /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Cannot convert 'AbsoluteTime*' to 'uint64_t*' for argument '2' to 'void nanoseconds_to_absolutetime(uint64_t, uint64_t*)'";
+		fRef = D223634505EC336D00C17DDB /* AppleUSBCDCACMData.cpp */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 1414;
+		rType = 1;
+	};
+	91BB527D13B55174009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D223634505EC336D00C17DDB /* AppleUSBCDCACMData.cpp */;
+		name = "AppleUSBCDCACMData.cpp: 1412";
+		rLen = 0;
+		rLoc = 39799;
+		rType = 0;
+		vrLen = 1358;
+		vrLoc = 39545;
+	};
+	91BB528013B55182009FE40E /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Cannot convert 'AbsoluteTime*' to 'uint64_t*' for argument '2' to 'void nanoseconds_to_absolutetime(uint64_t, uint64_t*)'";
+		fRef = D223634505EC336D00C17DDB /* AppleUSBCDCACMData.cpp */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 1414;
+		rType = 1;
+	};
+	91BB528113B55182009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D223634505EC336D00C17DDB /* AppleUSBCDCACMData.cpp */;
+		name = "AppleUSBCDCACMData.cpp: 1415";
+		rLen = 0;
+		rLoc = 39864;
+		rType = 0;
+		vrLen = 1676;
+		vrLoc = 39814;
+	};
+	D223634505EC336D00C17DDB /* AppleUSBCDCACMData.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1268, 57655}}";
+			sepNavSelRange = "{39864, 0}";
+			sepNavVisRange = "{39814, 1676}";
+		};
+	};
+	D2277A0007417BF9002AF184 /* Build All */ = {
+		activeExec = 0;
+	};
+	D2277A0A07417BF9002AF184 /* AppleUSBCDC */ = {
+		activeExec = 0;
+	};
+	D2277A1807417BF9002AF184 /* AppleUSBCDCACMControl */ = {
+		activeExec = 0;
+	};
+	D2277A2707417BF9002AF184 /* AppleUSBCDCACMData */ = {
+		activeExec = 0;
+	};
+	D2277A3607417BF9002AF184 /* AppleUSBCDCWCM */ = {
+		activeExec = 0;
+	};
+	D2277A4407417BF9002AF184 /* AppleUSBCDCECMControl */ = {
+		activeExec = 0;
+	};
+	D2277A5307417BFA002AF184 /* AppleUSBCDCECMData */ = {
+		activeExec = 0;
+	};
+	D2277A6207417BFA002AF184 /* AppleUSBCDCDMM */ = {
+		activeExec = 0;
+	};
+	D2277A7907417BFA002AF184 /* AppleUSBCDCEEM */ = {
+		activeExec = 0;
+	};
+}

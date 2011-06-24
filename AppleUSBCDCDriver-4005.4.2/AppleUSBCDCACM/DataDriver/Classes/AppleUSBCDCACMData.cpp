@@ -1407,14 +1407,14 @@ IOReturn AppleUSBCDCACMData::waitForBSDClientGated()
 {
     IOReturn	result = kIOReturnSuccess;
 	
-	AbsoluteTime	when;
-	AbsoluteTime	offset;
-	uint64_t		now;
+	//AbsoluteTime	when;
+	// AbsoluteTime	offset;
+	//uint64_t		now;
 		
-	now = mach_absolute_time();
-	nanoseconds_to_absolutetime (9000000000ULL, &offset);	//rcs We will wait for up to 9 Seconds before timing out..
-	ADD_ABSOLUTETIME (&now, &offset);	//when we timeout
-	nanoseconds_to_absolutetime (now, &when);	//rcs We will wait for up to 9 Seconds before timing out..
+	//now = mach_absolute_time() + 9000000000ULL;
+	//nanoseconds_to_absolutetime (9000000000ULL, &offset);	//rcs We will wait for up to 9 Seconds before timing out..
+	//ADD_ABSOLUTETIME (&now, &offset);	//when we timeout
+	//nanoseconds_to_absolutetime (now, &when);	//rcs We will wait for up to 9 Seconds before timing out..
 	
 	if (bsdClientState == 1)
 	{
@@ -1422,8 +1422,8 @@ IOReturn AppleUSBCDCACMData::waitForBSDClientGated()
 		return result; //no Need it was already published....
 	}
 	
-	result = fCommandGate->commandSleep((void *) &bsdClientState,when, THREAD_INTERRUPTIBLE);
-	//	result = fCommandGate->commandSleep((void *) &bsdClientState);
+	// result = fCommandGate->commandSleep((void *) &bsdClientState, when, THREAD_INTERRUPTIBLE);
+	result = fCommandGate->commandSleep((void *) &bsdClientState);
 	
 	if (result == THREAD_TIMED_OUT)
 	{

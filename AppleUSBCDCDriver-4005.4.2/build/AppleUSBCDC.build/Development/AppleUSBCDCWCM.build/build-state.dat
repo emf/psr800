@@ -1,0 +1,270 @@
+TAppleUSBCDCWCM
+v7
+r0
+t330649968.991159
+cCheck dependencies
+cProcessInfoPlistFile /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDCWCM.kext/Contents/Info.plist Plists/AppleUSBCDCWCM-Info.plist
+cPhaseScriptExecution "Run Script" /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Script-D2277A3707417BF9002AF184.sh
+cCompileC build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects-normal/i386/AppleUSBCDCWCM.o /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/AppleUSBCDCWCM/Classes/AppleUSBCDCWCM.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects-normal/i386/AppleUSBCDCWCM_info.o /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/DerivedSources/AppleUSBCDCWCM_info.c normal i386 c com.apple.compilers.gcc.4_2
+cLd /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDCWCM.kext/Contents/MacOS/AppleUSBCDCWCM normal i386
+cPhaseScriptExecution "Run Script" /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Script-D2277A4007417BF9002AF184.sh
+cTouch /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDCWCM.kext
+
+N/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOBufferMemoryDescriptor.h
+c000000004B90BBA50000000000003246
+t1267776421
+s12870
+
+N/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h
+c000000004B90BBA50000000000004DDF
+t1267776421
+s19935
+
+N/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOMessage.h
+c000000004B90BBA50000000000000DE0
+t1267776421
+s3552
+
+N/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOService.h
+c000000004B90BBA6000000000001F49D
+t1267776422
+s128157
+
+N/System/Library/Frameworks/Kernel.framework/Headers/IOKit/assert.h
+c000000004B90BBA600000000000006CC
+t1267776422
+s1740
+
+N/System/Library/Frameworks/Kernel.framework/Headers/IOKit/pwr_mgt/RootDomain.h
+c000000004B90BBA30000000000002A3F
+t1267776419
+s10815
+
+N/System/Library/Frameworks/Kernel.framework/Headers/IOKit/serial/IOModemSerialStreamSync.h
+c000000004B90C77D0000000000000591
+t1267779453
+s1425
+
+N/System/Library/Frameworks/Kernel.framework/Headers/IOKit/serial/IORS232SerialStreamSync.h
+c000000004B90C77D0000000000001DCC
+t1267779453
+s7628
+
+N/System/Library/Frameworks/Kernel.framework/Headers/IOKit/serial/IOSerialDriverSync.h
+c000000004B90C77D0000000000000DFB
+t1267779453
+s3579
+
+N/System/Library/Frameworks/Kernel.framework/Headers/IOKit/serial/IOSerialKeys.h
+c000000004B90C77D0000000000000B28
+t1267779453
+s2856
+
+N/System/Library/Frameworks/Kernel.framework/Headers/IOKit/usb/IOUSBBus.h
+c000000004B483479000000000000049F
+t1263023225
+s1183
+
+N/System/Library/Frameworks/Kernel.framework/Headers/IOKit/usb/IOUSBDevice.h
+c000000004B483479000000000000688A
+t1263023225
+s26762
+
+N/System/Library/Frameworks/Kernel.framework/Headers/IOKit/usb/IOUSBInterface.h
+c000000004B4834790000000000002FB5
+t1263023225
+s12213
+
+N/System/Library/Frameworks/Kernel.framework/Headers/IOKit/usb/IOUSBLog.h
+c000000004B4834790000000000001E4B
+t1263023225
+s7755
+
+N/System/Library/Frameworks/Kernel.framework/Headers/IOKit/usb/IOUSBNub.h
+c000000004B4834790000000000000875
+t1263023225
+s2165
+
+N/System/Library/Frameworks/Kernel.framework/Headers/IOKit/usb/IOUSBPipe.h
+c000000004B483479000000000000435F
+t1263023225
+s17247
+
+N/System/Library/Frameworks/Kernel.framework/Headers/IOKit/usb/USB.h
+c000000004B483479000000000000B005
+t1263023225
+s45061
+
+N/System/Library/Frameworks/Kernel.framework/Headers/UserNotification/KUNCUserNotifications.h
+c000000004B90BBA50000000000001E7F
+t1267776421
+s7807
+
+N/System/Library/Frameworks/Kernel.framework/Headers/libkern/OSByteOrder.h
+c000000004B90BBA3000000000000298B
+t1267776419
+s10635
+
+N/System/Library/Frameworks/Kernel.framework/Headers/machine/limits.h
+c000000004B90BBA400000000000001CA
+t1267776420
+s458
+
+N/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/AppleUSBCDCWCM/Classes/AppleUSBCDCWCM.cpp
+c0000000048D178CE00000000000047A6
+t1221687502
+s18342
+i<machine/limits.h>
+i<libkern/OSByteOrder.h>
+i<IOKit/assert.h>
+i<IOKit/IOLib.h>
+i<IOKit/IOService.h>
+i<IOKit/IOBufferMemoryDescriptor.h>
+i<IOKit/IOMessage.h>
+i<IOKit/pwr_mgt/RootDomain.h>
+i<IOKit/usb/IOUSBBus.h>
+i<IOKit/usb/IOUSBNub.h>
+i<IOKit/usb/IOUSBDevice.h>
+i<IOKit/usb/IOUSBLog.h>
+i<IOKit/usb/IOUSBPipe.h>
+i<IOKit/usb/USB.h>
+i<IOKit/usb/IOUSBInterface.h>
+i<IOKit/serial/IOSerialKeys.h>
+i<IOKit/serial/IOSerialDriverSync.h>
+i<IOKit/serial/IOModemSerialStreamSync.h>
+i<IOKit/serial/IORS232SerialStreamSync.h>
+i<UserNotification/KUNCUserNotifications.h>
+i"AppleUSBCDCWCM.h"
+
+N/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/AppleUSBCDCWCM/Headers/AppleUSBCDCWCM.h
+c000000004366735E0000000000000F1C
+t1130787678
+s3868
+i"AppleUSBCDCCommon.h"
+
+N/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/Common/AppleUSBCDCCommon.h
+c00000000499F52230000000000001A30
+t1235178019
+s6704
+
+N/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/DerivedSources/AppleUSBCDCWCM_info.c
+c000000004E0514E000000000000001A7
+t1308955872
+s423
+
+N/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects-normal/i386/AppleUSBCDCWCM.LinkFileList
+c000000004E0514E00000000000000090
+t1308955872
+s144
+
+N/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects-normal/i386/AppleUSBCDCWCM.o
+t1308955872
+s223912
+
+N/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects-normal/i386/AppleUSBCDCWCM_info.o
+t1308955872
+s3700
+
+N/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Script-D2277A3707417BF9002AF184.sh
+c000000004E0514E00000000000000097
+t1308955872
+s151
+
+N/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Script-D2277A4007417BF9002AF184.sh
+c000000004E0514E00000000000000098
+t1308955872
+s152
+
+N/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDCWCM.kext
+t1308955872
+s102
+
+N/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDCWCM.kext/Contents/Info.plist
+t1308955872
+s1532
+
+N/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDCWCM.kext/Contents/MacOS/AppleUSBCDCWCM
+t1308955872
+s31916
+
+NPlists/AppleUSBCDCWCM-Info.plist
+c000000004AA005F2000000000000062C
+t1252001266
+s1580
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies330649968#330649968#0(0"0(0#1#0"8625129888#0"0#
+
+CCompileC build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects-normal/i386/AppleUSBCDCWCM.o /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/AppleUSBCDCWCM/Classes/AppleUSBCDCWCM.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s330648672.117752
+e330648672.408325
+r1
+xCompileC
+xbuild/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects-normal/i386/AppleUSBCDCWCM.o
+x/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/AppleUSBCDCWCM/Classes/AppleUSBCDCWCM.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@99"Compile /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/AppleUSBCDCWCM/Classes/AppleUSBCDCWCM.cpp330648672#330648672#0(0"0(0#0#91"/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/AppleUSBCDCWCM/Classes/AppleUSBCDCWCM.cpp8611428480#1408"    cd /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -nostdinc -fno-builtin -Wno-trigraphs -fno-exceptions -fno-rtti -fcheck-new -fasm-blocks -force_cpusubtype_ALL -msoft-float -O0 -fno-common -mkernel -finline -fno-keep-inline-functions -DKERNEL -DKERNEL_PRIVATE -DDRIVER_PRIVATE -DAPPLE -DNeXT -fapple-kext -mfix-and-continue -gdwarf-2 -I/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/AppleUSBCDCWCM.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development -I/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/include -I/System/Library/Frameworks/Kernel.framework/PrivateHeaders -I/System/Library/Frameworks/Kernel.framework/Headers -I/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/DerivedSources/i386 -I/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/DerivedSources -D__MBUF_TRANSITION_ -c /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/AppleUSBCDCWCM/Classes/AppleUSBCDCWCM.cpp -o /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects-normal/i386/AppleUSBCDCWCM.o0#
+
+CCompileC build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects-normal/i386/AppleUSBCDCWCM_info.o /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/DerivedSources/AppleUSBCDCWCM_info.c normal i386 c com.apple.compilers.gcc.4_2
+s330648672.118441
+e330648672.143259
+r1
+xCompileC
+xbuild/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects-normal/i386/AppleUSBCDCWCM_info.o
+x/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/DerivedSources/AppleUSBCDCWCM_info.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@151"Compile /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/DerivedSources/AppleUSBCDCWCM_info.c330648672#330648672#0(0"0(0#0#143"/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/DerivedSources/AppleUSBCDCWCM_info.c8609933632#1412"    cd /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -nostdinc -fno-builtin -Wno-trigraphs -fasm-blocks -force_cpusubtype_ALL -msoft-float -O0 -fno-common -mkernel -finline -fno-keep-inline-functions -DKERNEL -DKERNEL_PRIVATE -DDRIVER_PRIVATE -DAPPLE -DNeXT -mfix-and-continue -gdwarf-2 -I/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/AppleUSBCDCWCM.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development -I/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/include -I/System/Library/Frameworks/Kernel.framework/PrivateHeaders -I/System/Library/Frameworks/Kernel.framework/Headers -I/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/DerivedSources/i386 -I/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/DerivedSources -D__MBUF_TRANSITION_ -c /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/DerivedSources/AppleUSBCDCWCM_info.c -o /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects-normal/i386/AppleUSBCDCWCM_info.o0#
+
+CLd /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDCWCM.kext/Contents/MacOS/AppleUSBCDCWCM normal i386
+s330648672.408418
+e330648672.505044
+r1
+xLd
+x/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDCWCM.kext/Contents/MacOS/AppleUSBCDCWCM
+xnormal
+xi386
+lSLF07#2@122"Link /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDCWCM.kext/Contents/MacOS/AppleUSBCDCWCM330648672#330648672#0(0"0(0#0#0"8610996768#737"    cd /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2    /Developer/usr/bin/g++-4.2 -arch i386 -L/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development -F/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development -filelist /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects-normal/i386/AppleUSBCDCWCM.LinkFileList -lcpp_kext -Xlinker -kext -nostdlib -lkmodc++ /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects-normal/i386/AppleUSBCDCWCM_info.o -lkmod -lcc_kext -o /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDCWCM.kext/Contents/MacOS/AppleUSBCDCWCM0#
+
+CPhaseScriptExecution "Run Script" /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Script-D2277A3707417BF9002AF184.sh
+s330649968.974018
+e330649968.982494
+r1
+xPhaseScriptExecution
+xRun Script
+x/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Script-D2277A3707417BF9002AF184.sh
+lSLF07#2@36"Run custom shell script 'Run Script'330649968#330649968#0(0"0(0#0#0"8624882784#18464"    cd /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2    setenv ACTION build    setenv ALTERNATE_GROUP wheel    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER root    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build    setenv BUILD_ROOT /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build    setenv BUILD_STYLE Development    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development    setenv CACHE_ROOT /var/folders/Cb/CbzPIC9zGGSfrt7eoTIBLk+++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/Cb/CbzPIC9zGGSfrt7eoTIBLk+++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDCWCM.kext    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/Cb/CbzPIC9zGGSfrt7eoTIBLk+++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Development    setenv CONFIGURATION_BUILD_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development    setenv CONFIGURATION_TEMP_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development    setenv CONTENTS_FOLDER_PATH AppleUSBCDCWCM.kext/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH /Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/AppleUSBCDC.dst    setenv DWARF_DSYM_FILE_NAME AppleUSBCDCWCM.kext.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development    setenv ENABLE_APPLE_KEXT_CODE_GENERATION YES    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH AppleUSBCDCWCM.kext/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH AppleUSBCDCWCM.kext/Contents/MacOS    setenv EXECUTABLE_NAME AppleUSBCDCWCM    setenv EXECUTABLE_PATH AppleUSBCDCWCM.kext/Contents/MacOS/AppleUSBCDCWCM    setenv FILE_LIST /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH AppleUSBCDCWCM.kext/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME AppleUSBCDCWCM.kext    setenv GCC3_VERSION 3.3    setenv GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW YES    setenv GCC_DISABLE_STATIC_FUNCTION_INLINING YES    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_BUILTIN_FUNCTIONS NO    setenv GCC_ENABLE_CPP_EXCEPTIONS NO    setenv GCC_ENABLE_CPP_RTTI NO    setenv GCC_ENABLE_FIX_AND_CONTINUE YES    setenv GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS YES    setenv GCC_ENABLE_FUNCTION_INLINING YES    setenv GCC_ENABLE_KERNEL_DEVELOPMENT YES    setenv GCC_ENABLE_PASCAL_STRINGS NO    setenv GCC_FORCE_CPU_SUBTYPE_ALL YES    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN NO    setenv GCC_NO_COMMON_BLOCKS YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRODUCT_TYPE_PREPROCESSOR_DEFINITIONS " KERNEL KERNEL_PRIVATE DRIVER_PRIVATE APPLE NeXT"    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_USE_STANDARD_INCLUDE_SEARCHING NO    setenv GCC_VERSION 4.2    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE NO    setenv GENERATE_PROFILING_CODE NO    setenv GID 501    setenv GROUP emf    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE Plists/AppleUSBCDCWCM-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH AppleUSBCDCWCM.kext/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH /InfoPlist.strings    setenv INSTALL_DIR /tmp/AppleUSBCDC.dst/System/Library/Extensions/IOUSBFamily.kext/Contents/PlugIns    setenv INSTALL_GROUP wheel    setenv INSTALL_MODE "\"a-w, u+w, a+rX\""    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER root    setenv INSTALL_PATH /System/Library/Extensions/IOUSBFamily.kext/Contents/PlugIns    setenv INSTALL_ROOT /tmp/AppleUSBCDC.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH AppleUSBCDCWCM.kext/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv KERNEL_EXTENSION YES    setenv KERNEL_EXTENSION_HEADER_SEARCH_PATHS "/System/Library/Frameworks/Kernel.framework/PrivateHeaders /System/Library/Frameworks/Kernel.framework/Headers"    setenv KERNEL_FRAMEWORK /System/Library/Frameworks/Kernel.framework    setenv KERNEL_FRAMEWORK_HEADERS /System/Library/Frameworks/Kernel.framework/Headers    setenv KERNEL_MODULE YES    setenv KEXT_FAMILY_NAME family    setenv KEXT_FRAMEWORK /System/Library/Frameworks/Kernel.framework    setenv KEXT_FRAMEWORK_NAME Kernel    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/AppleUSBCDCWCM-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects-normal/i386/AppleUSBCDCWCM.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MAC_OS_X_VERSION_ACTUAL 1067    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0607    setenv MODULE_IOKIT YES    setenv MODULE_NAME com.apple.driver.AppleUSBCDCWCM    setenv MODULE_START 0    setenv MODULE_STOP 0    setenv MODULE_VERSION 4.0.5    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects-normal    setenv OBJROOT /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CFLAGS -D__MBUF_TRANSITION_    setenv OTHER_CPLUSPLUSFLAGS -D__MBUF_TRANSITION_    setenv PACKAGE_TYPE com.apple.package-type.wrapper.kernel-extension    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH AppleUSBCDCWCM.kext/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS c++    setenv PKGINFO_FILE_PATH /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/PkgInfo    setenv PKGINFO_PATH AppleUSBCDCWCM.kext/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH AppleUSBCDCWCM.kext/Contents/PlugIns    setenv PREBINDING YES    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH /System/Library/Frameworks/Kernel.framework/Contents/PrivateHeaders/family    setenv PRODUCT_NAME AppleUSBCDCWCM    setenv PRODUCT_SETTINGS_PATH /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/Plists/AppleUSBCDCWCM-Info.plist    setenv PRODUCT_SPECIFIC_LDFLAGS -lcpp_kext    setenv PRODUCT_TYPE com.apple.product-type.kernel-extension.iokit    setenv PRODUCT_TYPE_HEADER_SEARCH_PATHS " /System/Library/Frameworks/Kernel.framework/PrivateHeaders /System/Library/Frameworks/Kernel.framework/Headers"    setenv PROFILING_CODE NO    setenv PROJECT AppleUSBCDC    setenv PROJECT_DERIVED_FILE_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/DerivedSources    setenv PROJECT_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2    setenv PROJECT_FILE_PATH /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/AppleUSBCDC.xcodeproj    setenv PROJECT_NAME AppleUSBCDC    setenv PROJECT_TEMP_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build    setenv PUBLIC_HEADERS_FOLDER_PATH /System/Library/Frameworks/Kernel.framework/Contents/Headers/family    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH AppleUSBCDCWCM.kext/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT     setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH AppleUSBCDCWCM.kext/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/Cb/CbzPIC9zGGSfrt7eoTIBLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH AppleUSBCDCWCM.kext/Contents/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2    setenv SRCROOT /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE debugging    setenv SYMBOL_REPOSITORY_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/SymbolRepositories    setenv SYMROOT /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME AppleUSBCDCWCM    setenv TARGET_BUILD_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development    setenv TARGET_NAME AppleUSBCDCWCM    setenv TARGET_TEMP_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build    setenv TEMP_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build    setenv TEMP_FILES_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build    setenv TEMP_FILE_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build    setenv TEMP_ROOT /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH AppleUSBCDCWCM.kext/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER emf    setenv USER_APPS_DIR /Users/emf/Applications    setenv USER_LIBRARY_DIR /Users/emf/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH AppleUSBCDCWCM.kext/Contents/version.plist    setenv VERSION_INFO_BUILDER emf    setenv VERSION_INFO_FILE AppleUSBCDCWCM_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:AppleUSBCDCWCM  PROJECT:AppleUSBCDC-\""    setenv WARNING_CFLAGS "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas"    setenv WRAPPER_EXTENSION kext    setenv WRAPPER_NAME AppleUSBCDCWCM.kext    setenv WRAPPER_SUFFIX .kext    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0323    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv ZERO_LINK YES    /bin/sh -c /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Script-D2277A3707417BF9002AF184.sh0#
+
+CPhaseScriptExecution "Run Script" /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Script-D2277A4007417BF9002AF184.sh
+s330649968.982712
+e330649968.991086
+r1
+xPhaseScriptExecution
+xRun Script
+x/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Script-D2277A4007417BF9002AF184.sh
+lSLF07#2@36"Run custom shell script 'Run Script'330649968#330649969#0(0"0(0#0#0"8623862016#18463"    cd /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2    setenv ACTION build    setenv ALTERNATE_GROUP wheel    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER root    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build    setenv BUILD_ROOT /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build    setenv BUILD_STYLE Development    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development    setenv CACHE_ROOT /var/folders/Cb/CbzPIC9zGGSfrt7eoTIBLk+++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/Cb/CbzPIC9zGGSfrt7eoTIBLk+++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDCWCM.kext    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/Cb/CbzPIC9zGGSfrt7eoTIBLk+++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Development    setenv CONFIGURATION_BUILD_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development    setenv CONFIGURATION_TEMP_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development    setenv CONTENTS_FOLDER_PATH AppleUSBCDCWCM.kext/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH /Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/AppleUSBCDC.dst    setenv DWARF_DSYM_FILE_NAME AppleUSBCDCWCM.kext.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development    setenv ENABLE_APPLE_KEXT_CODE_GENERATION YES    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH AppleUSBCDCWCM.kext/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH AppleUSBCDCWCM.kext/Contents/MacOS    setenv EXECUTABLE_NAME AppleUSBCDCWCM    setenv EXECUTABLE_PATH AppleUSBCDCWCM.kext/Contents/MacOS/AppleUSBCDCWCM    setenv FILE_LIST /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH AppleUSBCDCWCM.kext/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME AppleUSBCDCWCM.kext    setenv GCC3_VERSION 3.3    setenv GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW YES    setenv GCC_DISABLE_STATIC_FUNCTION_INLINING YES    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_BUILTIN_FUNCTIONS NO    setenv GCC_ENABLE_CPP_EXCEPTIONS NO    setenv GCC_ENABLE_CPP_RTTI NO    setenv GCC_ENABLE_FIX_AND_CONTINUE YES    setenv GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS YES    setenv GCC_ENABLE_FUNCTION_INLINING YES    setenv GCC_ENABLE_KERNEL_DEVELOPMENT YES    setenv GCC_ENABLE_PASCAL_STRINGS NO    setenv GCC_FORCE_CPU_SUBTYPE_ALL YES    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN NO    setenv GCC_NO_COMMON_BLOCKS YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRODUCT_TYPE_PREPROCESSOR_DEFINITIONS " KERNEL KERNEL_PRIVATE DRIVER_PRIVATE APPLE NeXT"    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_USE_STANDARD_INCLUDE_SEARCHING NO    setenv GCC_VERSION 4.2    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE NO    setenv GENERATE_PROFILING_CODE NO    setenv GID 501    setenv GROUP emf    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE Plists/AppleUSBCDCWCM-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH AppleUSBCDCWCM.kext/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH /InfoPlist.strings    setenv INSTALL_DIR /tmp/AppleUSBCDC.dst/System/Library/Extensions/IOUSBFamily.kext/Contents/PlugIns    setenv INSTALL_GROUP wheel    setenv INSTALL_MODE "\"a-w, u+w, a+rX\""    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER root    setenv INSTALL_PATH /System/Library/Extensions/IOUSBFamily.kext/Contents/PlugIns    setenv INSTALL_ROOT /tmp/AppleUSBCDC.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH AppleUSBCDCWCM.kext/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv KERNEL_EXTENSION YES    setenv KERNEL_EXTENSION_HEADER_SEARCH_PATHS "/System/Library/Frameworks/Kernel.framework/PrivateHeaders /System/Library/Frameworks/Kernel.framework/Headers"    setenv KERNEL_FRAMEWORK /System/Library/Frameworks/Kernel.framework    setenv KERNEL_FRAMEWORK_HEADERS /System/Library/Frameworks/Kernel.framework/Headers    setenv KERNEL_MODULE YES    setenv KEXT_FAMILY_NAME family    setenv KEXT_FRAMEWORK /System/Library/Frameworks/Kernel.framework    setenv KEXT_FRAMEWORK_NAME Kernel    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/AppleUSBCDCWCM-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects-normal/i386/AppleUSBCDCWCM.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MAC_OS_X_VERSION_ACTUAL 1067    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0607    setenv MODULE_IOKIT YES    setenv MODULE_NAME com.apple.driver.AppleUSBCDCWCM    setenv MODULE_START 0    setenv MODULE_STOP 0    setenv MODULE_VERSION 4.0.5    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Objects-normal    setenv OBJROOT /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CFLAGS -D__MBUF_TRANSITION_    setenv OTHER_CPLUSPLUSFLAGS -D__MBUF_TRANSITION_    setenv PACKAGE_TYPE com.apple.package-type.wrapper.kernel-extension    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH AppleUSBCDCWCM.kext/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS c++    setenv PKGINFO_FILE_PATH /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/PkgInfo    setenv PKGINFO_PATH AppleUSBCDCWCM.kext/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH AppleUSBCDCWCM.kext/Contents/PlugIns    setenv PREBINDING YES    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH /System/Library/Frameworks/Kernel.framework/Contents/PrivateHeaders/family    setenv PRODUCT_NAME AppleUSBCDCWCM    setenv PRODUCT_SETTINGS_PATH /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/Plists/AppleUSBCDCWCM-Info.plist    setenv PRODUCT_SPECIFIC_LDFLAGS -lcpp_kext    setenv PRODUCT_TYPE com.apple.product-type.kernel-extension.iokit    setenv PRODUCT_TYPE_HEADER_SEARCH_PATHS " /System/Library/Frameworks/Kernel.framework/PrivateHeaders /System/Library/Frameworks/Kernel.framework/Headers"    setenv PROFILING_CODE NO    setenv PROJECT AppleUSBCDC    setenv PROJECT_DERIVED_FILE_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/DerivedSources    setenv PROJECT_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2    setenv PROJECT_FILE_PATH /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/AppleUSBCDC.xcodeproj    setenv PROJECT_NAME AppleUSBCDC    setenv PROJECT_TEMP_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build    setenv PUBLIC_HEADERS_FOLDER_PATH /System/Library/Frameworks/Kernel.framework/Contents/Headers/family    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH AppleUSBCDCWCM.kext/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT     setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH AppleUSBCDCWCM.kext/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/Cb/CbzPIC9zGGSfrt7eoTIBLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH AppleUSBCDCWCM.kext/Contents/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2    setenv SRCROOT /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE debugging    setenv SYMBOL_REPOSITORY_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/SymbolRepositories    setenv SYMROOT /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME AppleUSBCDCWCM    setenv TARGET_BUILD_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development    setenv TARGET_NAME AppleUSBCDCWCM    setenv TARGET_TEMP_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build    setenv TEMP_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build    setenv TEMP_FILES_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build    setenv TEMP_FILE_DIR /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build    setenv TEMP_ROOT /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH AppleUSBCDCWCM.kext/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER emf    setenv USER_APPS_DIR /Users/emf/Applications    setenv USER_LIBRARY_DIR /Users/emf/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH AppleUSBCDCWCM.kext/Contents/version.plist    setenv VERSION_INFO_BUILDER emf    setenv VERSION_INFO_FILE AppleUSBCDCWCM_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:AppleUSBCDCWCM  PROJECT:AppleUSBCDC-\""    setenv WARNING_CFLAGS "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas"    setenv WRAPPER_EXTENSION kext    setenv WRAPPER_NAME AppleUSBCDCWCM.kext    setenv WRAPPER_SUFFIX .kext    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0323    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv ZERO_LINK NO    /bin/sh -c /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDCWCM.build/Script-D2277A4007417BF9002AF184.sh0#
+
+CProcessInfoPlistFile /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDCWCM.kext/Contents/Info.plist Plists/AppleUSBCDCWCM-Info.plist
+s330648672.106464
+e330648672.108946
+r1
+xProcessInfoPlistFile
+x/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDCWCM.kext/Contents/Info.plist
+xPlists/AppleUSBCDCWCM-Info.plist
+lSLF07#2@40"Process Plists/AppleUSBCDCWCM-Info.plist330648672#330648672#0(0"0(0#0#82"/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/Plists/AppleUSBCDCWCM-Info.plist8597729696#268"    cd /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2    builtin-infoPlistUtility Plists/AppleUSBCDCWCM-Info.plist -expandbuildsettings -platform macosx -o /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDCWCM.kext/Contents/Info.plist0#
+
+CTouch /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDCWCM.kext
+s330648672.514353
+e330648672.516370
+r1
+xTouch
+x/Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDCWCM.kext
+lSLF07#2@93"Touch /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDCWCM.kext330648672#330648672#0(0"0(0#0#0"8603234944#167"    cd /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2    /usr/bin/touch -c /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDCWCM.kext0#
+

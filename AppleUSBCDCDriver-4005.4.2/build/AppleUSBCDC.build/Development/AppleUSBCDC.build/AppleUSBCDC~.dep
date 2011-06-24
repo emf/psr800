@@ -1,0 +1,5 @@
+db4d790d0dd690fb3df421c3876d3250 012a95e4289fec754c32ba7ec3259265 ffffffffffffffffffffffffffffffff 102 /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDC.kext
+816f2fc002eaf91d9737ed7e6cddaf2d 3f2a28bf6098f1f691742b716cc10b12 ffffffffffffffffffffffffffffffff 36668 /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDC.kext/Contents/MacOS/AppleUSBCDC
+00000000000000000000000000000000 65087e726fa498103bb7e7cc8771966f ffffffffffffffffffffffffffffffff 10132 /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Development/AppleUSBCDC.kext/Contents/Info.plist
+0000000043f0ba3f000000000001bb3a 9f02b33312ed51868b63d6b5c2634549 ffffffffffffffffffffffffffffffff 230916 /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDC.build/Objects-normal/i386/AppleUSBCDC.o
+000000004e0514df00000000000001a4 1e6d9cf31df2067b1c543bcbaebf50fa ffffffffffffffffffffffffffffffff 3668 /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Development/AppleUSBCDC.build/Objects-normal/i386/AppleUSBCDC_info.o
