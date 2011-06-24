@@ -86,3 +86,15 @@ So, it looks to me like the important parts are:
 Vendor 3223 (decimal), Product 8, and Interface 1 for the serial port.
 
 It's an ACM device, so we should be able to get the ACM driver to see it.. 
+
+So, on LINUX, we try:
+	modprobe usbserial vendor=3223 product=8
+and we get:
+[ 1589.958254] usbcore: registered new interface driver usbserial
+[ 1589.958269] USB Serial support registered for generic
+[ 1589.958631] usbserial_generic 2-1:1.1: generic converter detected
+[ 1589.959467] usb 2-1: generic converter now attached to ttyUSB0
+[ 1589.959957] usbcore: registered new interface driver usbserial_generic
+[ 1589.959959] usbserial: USB Serial Driver core
+
+that seems promising.
