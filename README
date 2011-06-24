@@ -2,13 +2,6 @@ Oh god..
 
 this is what i've done to (hopefully) make this scanner work on OSX.
 
-/System/Library/Extensions/FTDIUSBSerialDriver.kext/Contents/Info.plist
-
-copy the one in this directory over there after you install the driver from 
-http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_2_16.dmg
-
-(see the Tech Note TN_105 at http://www.ftdichip.com/Support/Documents/TechnicalNotes/TN_105%20Adding%20Support%20for%20New%20FTDI%20Devices%20to%20Mac%20Driver.pdf)
-
 The device information is:
 Full Speed device @ 4 (0xFD313000): .............................................   Composite device: "GRECOM PSR-8OO  Scanner\000\000\000\000\000"
     Port Information:   0x0018
@@ -92,11 +85,4 @@ Full Speed device @ 4 (0xFD313000): ............................................
 So, it looks to me like the important parts are:
 Vendor 3223 (decimal), Product 8, and Interface 1 for the serial port.
 
-so, then we try:
-# kextload /System/Library/Extensions/FTDIUSBSerialDriver.kext
-
-which looks like it loaded a driver, kernel.log: 
-kernel[0]: FTDIUSBSerialDriver:        0  c970008 start - ok
-
-Which makes a horribly named PSR-800gobblidlygook name.  It has to be as long as or longer than "usbserial".. shiiiiity driver code.
-
+It's an ACM device, so we should be able to get the ACM driver to see it.. 
