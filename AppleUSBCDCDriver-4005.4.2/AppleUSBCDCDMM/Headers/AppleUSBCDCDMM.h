@@ -30,11 +30,11 @@
 
     // Common Defintions
 
-#define LDEBUG		0			// for debugging
-#define USE_ELG		0			// to Event LoG (via kprintf and Firewire) - LDEBUG must also be set
+#define LDEBUG		1			// for debugging
+#define USE_ELG		1			// to Event LoG (via kprintf and Firewire) - LDEBUG must also be set
 #define USE_IOL		0			// to IOLog - LDEBUG must also be set
-#define	LOG_DATA	0			// logs data to the appropriate log - LDEBUG must also be set
-#define DUMPALL		0			// Dumps all the data to the log - LOG_DATA must also be set
+#define	LOG_DATA	1			// logs data to the appropriate log - LDEBUG must also be set
+#define DUMPALL		1			// Dumps all the data to the log - LOG_DATA must also be set
 
 #define Sleep_Time	20
 

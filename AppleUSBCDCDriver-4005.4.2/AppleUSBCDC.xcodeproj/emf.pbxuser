@@ -35,6 +35,27 @@
 			91BB527D13B55174009FE40E /* PBXTextBookmark */ = 91BB527D13B55174009FE40E /* PBXTextBookmark */;
 			91BB528013B55182009FE40E /* XCBuildMessageTextBookmark */ = 91BB528013B55182009FE40E /* XCBuildMessageTextBookmark */;
 			91BB528113B55182009FE40E /* PBXTextBookmark */ = 91BB528113B55182009FE40E /* PBXTextBookmark */;
+			91BB529213B55262009FE40E /* PBXTextBookmark */ = 91BB529213B55262009FE40E /* PBXTextBookmark */;
+			91BB529313B55265009FE40E /* PBXTextBookmark */ = 91BB529313B55265009FE40E /* PBXTextBookmark */;
+			91BB529413B55265009FE40E /* PBXTextBookmark */ = 91BB529413B55265009FE40E /* PBXTextBookmark */;
+			91BB529713B552B1009FE40E /* PBXTextBookmark */ = 91BB529713B552B1009FE40E /* PBXTextBookmark */;
+			91BB529813B552B1009FE40E /* PBXTextBookmark */ = 91BB529813B552B1009FE40E /* PBXTextBookmark */;
+			91BB529913B552B1009FE40E /* PBXTextBookmark */ = 91BB529913B552B1009FE40E /* PBXTextBookmark */;
+			91BB529B13B552B1009FE40E /* PBXTextBookmark */ = 91BB529B13B552B1009FE40E /* PBXTextBookmark */;
+			91BB529F13B55466009FE40E /* PBXTextBookmark */ = 91BB529F13B55466009FE40E /* PBXTextBookmark */;
+			91BB52A013B55466009FE40E /* PBXTextBookmark */ = 91BB52A013B55466009FE40E /* PBXTextBookmark */;
+			91BB52A113B55466009FE40E /* PBXTextBookmark */ = 91BB52A113B55466009FE40E /* PBXTextBookmark */;
+			91BB52A213B55466009FE40E /* PBXTextBookmark */ = 91BB52A213B55466009FE40E /* PBXTextBookmark */;
+			91BB52A313B55466009FE40E /* PBXTextBookmark */ = 91BB52A313B55466009FE40E /* PBXTextBookmark */;
+			91BB52A413B55466009FE40E /* PBXTextBookmark */ = 91BB52A413B55466009FE40E /* PBXTextBookmark */;
+			91BB52A513B55467009FE40E /* PBXTextBookmark */ = 91BB52A513B55467009FE40E /* PBXTextBookmark */;
+			91BB52A613B55467009FE40E /* PBXTextBookmark */ = 91BB52A613B55467009FE40E /* PBXTextBookmark */;
+			91BB52A713B55467009FE40E /* PBXTextBookmark */ = 91BB52A713B55467009FE40E /* PBXTextBookmark */;
+			91BB52A813B55467009FE40E /* PBXTextBookmark */ = 91BB52A813B55467009FE40E /* PBXTextBookmark */;
+			91BB52A913B55467009FE40E /* PBXTextBookmark */ = 91BB52A913B55467009FE40E /* PBXTextBookmark */;
+			91BB52AA13B55467009FE40E /* PBXTextBookmark */ = 91BB52AA13B55467009FE40E /* PBXTextBookmark */;
+			91BB52AB13B55467009FE40E /* PBXTextBookmark */ = 91BB52AB13B55467009FE40E /* PBXTextBookmark */;
+			91BB52AE13B55467009FE40E /* PBXTextBookmark */ = 91BB52AE13B55467009FE40E /* PBXTextBookmark */;
 		};
 		sourceControlManager = 91BB526C13B54C63009FE40E /* Source Control */;
 		userBuildSettings = {
@@ -92,11 +113,260 @@
 		vrLen = 1676;
 		vrLoc = 39814;
 	};
+	91BB529213B55262009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D223634305EC333900C17DDB /* AppleUSBCDCACMControl.cpp */;
+		rLen = 1;
+		rLoc = 86;
+		rType = 1;
+	};
+	91BB529313B55265009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D223634505EC336D00C17DDB /* AppleUSBCDCACMData.cpp */;
+		name = "AppleUSBCDCACMData.cpp: 1412";
+		rLen = 0;
+		rLoc = 39799;
+		rType = 0;
+		vrLen = 1358;
+		vrLoc = 39545;
+	};
+	91BB529413B55265009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D223634305EC333900C17DDB /* AppleUSBCDCACMControl.cpp */;
+		name = "AppleUSBCDCACMControl.cpp: 87";
+		rLen = 48;
+		rLoc = 2665;
+		rType = 0;
+		vrLen = 471;
+		vrLoc = 2457;
+	};
+	91BB529713B552B1009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D223634505EC336D00C17DDB /* AppleUSBCDCACMData.cpp */;
+		name = "AppleUSBCDCACMData.cpp: 1412";
+		rLen = 0;
+		rLoc = 39799;
+		rType = 0;
+		vrLen = 1358;
+		vrLoc = 39545;
+	};
+	91BB529813B552B1009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D223634305EC333900C17DDB /* AppleUSBCDCACMControl.cpp */;
+		name = "AppleUSBCDCACMControl.cpp: 87";
+		rLen = 48;
+		rLoc = 2665;
+		rType = 0;
+		vrLen = 1046;
+		vrLoc = 2457;
+	};
+	91BB529913B552B1009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 91BB529A13B552B1009FE40E /* IOService.h */;
+		rLen = 1;
+		rLoc = 759;
+		rType = 1;
+	};
+	91BB529A13B552B1009FE40E /* IOService.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = IOService.h;
+		path = /System/Library/Frameworks/Kernel.framework/Versions/A/Headers/IOKit/IOService.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {7012, 22607}}";
+			sepNavSelRange = "{51090, 67}";
+			sepNavVisRange = "{49547, 3904}";
+		};
+	};
+	91BB529B13B552B1009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 91BB529C13B552B1009FE40E /* IOService.h */;
+		name = "IOService.h: 760";
+		rLen = 67;
+		rLoc = 51090;
+		rType = 0;
+		vrLen = 3904;
+		vrLoc = 49547;
+	};
+	91BB529C13B552B1009FE40E /* IOService.h */ = {
+		isa = PBXFileReference;
+		name = IOService.h;
+		path = /System/Library/Frameworks/Kernel.framework/Versions/A/Headers/IOKit/IOService.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {7012, 22607}}";
+			sepNavSelRange = "{51090, 67}";
+			sepNavVisRange = "{49547, 3904}";
+		};
+	};
+	91BB529F13B55466009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D223634505EC336D00C17DDB /* AppleUSBCDCACMData.cpp */;
+		name = "AppleUSBCDCACMData.cpp: 1412";
+		rLen = 0;
+		rLoc = 39799;
+		rType = 0;
+		vrLen = 1358;
+		vrLoc = 39545;
+	};
+	91BB52A013B55466009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 91BB529A13B552B1009FE40E /* IOService.h */;
+		name = "IOService.h: 760";
+		rLen = 67;
+		rLoc = 51090;
+		rType = 0;
+		vrLen = 3904;
+		vrLoc = 49547;
+	};
+	91BB52A113B55466009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D2B61BFC06E40025007C9DDB /* AppleUSBCDCDMM.h */;
+		name = "AppleUSBCDCDMM.h: 34";
+		rLen = 0;
+		rLoc = 1183;
+		rType = 0;
+		vrLen = 1262;
+		vrLoc = 1480;
+	};
+	91BB52A213B55466009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D201012D076A326B0011028B /* AppleUSBCDCEEM.h */;
+		name = "AppleUSBCDCEEM.h: 67";
+		rLen = 34;
+		rLoc = 2620;
+		rType = 0;
+		vrLen = 1100;
+		vrLoc = 2052;
+	};
+	91BB52A313B55466009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D2A076DA05EC45B700F5DA5F /* AppleUSBCDCECM.h */;
+		rLen = 1;
+		rLoc = 65;
+		rType = 1;
+	};
+	91BB52A413B55466009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D2A076DA05EC45B700F5DA5F /* AppleUSBCDCECM.h */;
+		name = "AppleUSBCDCECM.h: 66";
+		rLen = 34;
+		rLoc = 2601;
+		rType = 0;
+		vrLen = 1239;
+		vrLoc = 1774;
+	};
+	91BB52A513B55467009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D223634505EC336D00C17DDB /* AppleUSBCDCACMData.cpp */;
+		name = "AppleUSBCDCACMData.cpp: 1415";
+		rLen = 0;
+		rLoc = 39864;
+		rType = 0;
+		vrLen = 1676;
+		vrLoc = 39814;
+	};
+	91BB52A613B55467009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D223633C05EC2B9F00C17DDB /* AppleUSBCDCACM.h */;
+		name = "AppleUSBCDCACM.h: 16";
+		rLen = 0;
+		rLoc = 701;
+		rType = 0;
+		vrLen = 1508;
+		vrLoc = 1579;
+	};
+	91BB52A713B55467009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 91BB529A13B552B1009FE40E /* IOService.h */;
+		name = "IOService.h: 770";
+		rLen = 71;
+		rLoc = 52205;
+		rType = 0;
+		vrLen = 5008;
+		vrLoc = 50655;
+	};
+	91BB52A813B55467009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D223633F05EC2BD600C17DDB /* AppleUSBCDCACMControl.h */;
+		name = "AppleUSBCDCACMControl.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1358;
+		vrLoc = 112;
+	};
+	91BB52A913B55467009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D223634305EC333900C17DDB /* AppleUSBCDCACMControl.cpp */;
+		name = "AppleUSBCDCACMControl.cpp: 423";
+		rLen = 15;
+		rLoc = 12869;
+		rType = 0;
+		vrLen = 923;
+		vrLoc = 12341;
+	};
+	91BB52AA13B55467009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D2B61BFC06E40025007C9DDB /* AppleUSBCDCDMM.h */;
+		rLen = 1;
+		rLoc = 64;
+		rType = 1;
+	};
+	91BB52AB13B55467009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D2B61BFC06E40025007C9DDB /* AppleUSBCDCDMM.h */;
+		name = "AppleUSBCDCDMM.h: 65";
+		rLen = 34;
+		rLoc = 2455;
+		rType = 0;
+		vrLen = 1417;
+		vrLoc = 1533;
+	};
+	91BB52AE13B55467009FE40E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D223634305EC333900C17DDB /* AppleUSBCDCACMControl.cpp */;
+		name = "AppleUSBCDCACMControl.cpp: 102";
+		rLen = 6;
+		rLoc = 3138;
+		rType = 0;
+		vrLen = 1677;
+		vrLoc = 2069;
+	};
+	D201012D076A326B0011028B /* AppleUSBCDCEEM.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1426, 3146}}";
+			sepNavSelRange = "{2620, 34}";
+			sepNavVisRange = "{2052, 1100}";
+		};
+	};
+	D223633C05EC2B9F00C17DDB /* AppleUSBCDCACM.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1426, 1508}}";
+			sepNavSelRange = "{701, 0}";
+			sepNavVisRange = "{1579, 1508}";
+		};
+	};
+	D223633F05EC2BD600C17DDB /* AppleUSBCDCACMControl.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1268, 1573}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{112, 1358}";
+		};
+	};
+	D223634305EC333900C17DDB /* AppleUSBCDCACMControl.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1315, 17576}}";
+			sepNavSelRange = "{3138, 6}";
+			sepNavVisRange = "{2069, 1677}";
+		};
+	};
 	D223634505EC336D00C17DDB /* AppleUSBCDCACMData.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1268, 57655}}";
-			sepNavSelRange = "{39864, 0}";
-			sepNavVisRange = "{39814, 1676}";
+			sepNavIntBoundsRect = "{{0, 0}, {1167, 57642}}";
+			sepNavSelRange = "{39799, 0}";
+			sepNavVisRange = "{39545, 1358}";
 		};
 	};
 	D2277A0007417BF9002AF184 /* Build All */ = {
@@ -125,5 +395,19 @@
 	};
 	D2277A7907417BFA002AF184 /* AppleUSBCDCEEM */ = {
 		activeExec = 0;
+	};
+	D2A076DA05EC45B700F5DA5F /* AppleUSBCDCECM.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1426, 1222}}";
+			sepNavSelRange = "{2601, 34}";
+			sepNavVisRange = "{1774, 1239}";
+		};
+	};
+	D2B61BFC06E40025007C9DDB /* AppleUSBCDCDMM.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1426, 4784}}";
+			sepNavSelRange = "{2455, 34}";
+			sepNavVisRange = "{1533, 1417}";
+		};
 	};
 }
