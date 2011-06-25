@@ -1,0 +1,222 @@
+HowTo: Com port emulation with CDC and usbser.sys ! 
+
+From Dieter:
+
+The descriptors and .inf file below are for a barcode reader:
+
+You need to handle certain CDC requests (at least as dummies): 
+SET_LINE_CODING 
+SEND_ENCAPSULATED_COMMAND 
+SET_CONTROL_LINE_STATE 
+SEND_BREAK 
+GET_LINE_CODING 
+GET_ENCAPSULATED_RESPONSE 
+
+
+It is possible to use the usbser.sys with an .inf file you need to write. 
+USBSER.SYS has some problems; I never got the PnP work properly and now we use a custom driver. 
+
+Copied from USBView: 
+Device Descriptor: 
+bcdUSB: 0x0110 
+bDeviceClass: 0x02 
+bDeviceSubClass: 0x00 
+bDeviceProtocol: 0x00 
+bMaxPacketSize0: 0x20 (32) 
+idVendor: REPLACE WITH YOUR VID 
+idProduct: REPLACE WITH YOUR PID 
+bcdDevice: 0x0000 
+iManufacturer: 0x01 
+0x0409: "HHP" 
+iProduct: 0x02 
+0x0409: "IT4600" 
+iSerialNumber: 0x08 
+0x0409: "XXXXXX" 
+bNumConfigurations: 0x01 
+
+ConnectionStatus: DeviceConnected 
+Current Config Value: 0x01 
+Device Bus Speed: Full 
+Device Address: 0x03 
+Open Pipes: 3 
+
+Endpoint Descriptor: 
+bEndpointAddress: 0x83 
+Transfer Type: Interrupt 
+wMaxPacketSize: 0x0020 (32) 
+bInterval: 0x02 
+
+Endpoint Descriptor: 
+bEndpointAddress: 0x81 
+Transfer Type: Bulk 
+wMaxPacketSize: 0x0040 (64) 
+bInterval: 0x00 
+
+Endpoint Descriptor: 
+bEndpointAddress: 0x02 
+Transfer Type: Bulk 
+wMaxPacketSize: 0x0040 (64) 
+bInterval: 0x00 
+
+Configuration Descriptor: 
+wTotalLength: 0x003E 
+bNumInterfaces: 0x02 
+bConfigurationValue: 0x01 
+iConfiguration: 0x03 
+0x0409: "Default" 
+bmAttributes: 0xA0 (Bus Powered Remote Wakeup) 
+MaxPower: 0xBB (374 Ma) 
+
+Interface Descriptor: 
+bInterfaceNumber: 0x00 
+bAlternateSetting: 0x00 
+bNumEndpoints: 0x01 
+bInterfaceClass: 0x02 
+bInterfaceSubClass: 0x02 
+bInterfaceProtocol: 0x01 
+iInterface: 0x04 
+0x0409: "CDC-ACM Comm" 
+
+Unknown Descriptor: 
+bDescriptorType: 0x24 
+bLength: 0x05 
+05 24 00 10 01 
+
+Unknown Descriptor: 
+bDescriptorType: 0x24 
+bLength: 0x05 
+05 24 01 03 01 
+
+Unknown Descriptor: 
+bDescriptorType: 0x24 
+bLength: 0x04 
+04 24 02 06 
+
+Endpoint Descriptor: 
+bEndpointAddress: 0x83 
+Transfer Type: Interrupt 
+wMaxPacketSize: 0x0020 (32) 
+bInterval: 0x02 
+
+Interface Descriptor: 
+bInterfaceNumber: 0x01 
+bAlternateSetting: 0x00 
+bNumEndpoints: 0x02 
+bInterfaceClass: 0x0A 
+bInterfaceSubClass: 0x00 
+bInterfaceProtocol: 0x00 
+iInterface: 0x05 
+0x0409: "CDC-ACM Data" 
+
+Endpoint Descriptor: 
+bEndpointAddress: 0x81 
+Transfer Type: Bulk 
+wMaxPacketSize: 0x0040 (64) 
+bInterval: 0x00 
+
+Endpoint Descriptor: 
+bEndpointAddress: 0x02 
+Transfer Type: Bulk 
+wMaxPacketSize: 0x0040 (64) 
+bInterval: 0x00 
+--------------------------------------------------- 
+
+
+And here is my .inf file (Win2000,XP): 
+
+[Version] 
+Signature="$Windows NT$" 
+Class=Ports 
+ClassGuid={4D36E978-E325-11CE-BFC1-08002BE10318} 
+
+Provider=%HHP% 
+LayoutFile=layout.inf 
+DriverVer=10/15/1999,5.0.2153.1 
+
+[Manufacturer] 
+%HHP%=HHP 
+
+[HHP] 
+%HHP5600%=Reader, USB\VID_0536&PID_016A 
+%HHP5800%=Reader, USB\VID_0536&PID_018A 
+
+[Reader_Install.NTx86] 
+;Windows2000 
+
+[DestinationDirs] 
+DefaultDestDir=12 
+Reader.NT.Copy=12 
+
+[Reader.NT] 
+CopyFiles=Reader.NT.Copy 
+AddReg=Reader.NT.AddReg 
+
+[Reader.NT.Copy] 
+usbser.sys 
+
+[Reader.NT.AddReg] 
+HKR,,DevLoader,,*ntkern 
+HKR,,NTMPDriver,,usbser.sys 
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider" 
+
+[Reader.NT.Services] 
+AddService = usbser, 0x00000002, Service_Inst 
+
+[Service_Inst] 
+DisplayName = %Serial.SvcDesc% 
+ServiceType = 1 ; SERVICE_KERNEL_DRIVER 
+StartType = 3 ; SERVICE_DEMAND_START 
+ErrorControl = 1 ; SERVICE_ERROR_NORMAL 
+ServiceBinary = %12%\usbser.sys 
+LoadOrderGroup = Base 
+
+[Strings] 
+HHP = "Hand Held Products, Inc." 
+HHP5600 = "IT5600 Barcode Reader" 
+HHP5800 = "IT5800 Barcode Reader" 
+Serial.SvcDesc = "USB Serial emulation driver" 
+
+No warranties of any kind! 
+As I already said, we now use a custom driver and the .inf is a left over from my experiments. 
+
+Please read these chapters in the CDC spec.: 
+3.3 Interface Definitions 
+3.3.1 Communication Class Interface 
+3.3.2 Data Class Interface 
+3.4 Endpoint Requirements 
+3.4.1 Communication Class Endpoint Requirements 
+3.4.2 Data Class Endpoint Requirements 
+3.6.2 Abstract Control Model 
+3.6.2.1 Abstract Control Model Serial Emulation 
+4. Class-Specific Codes for Communication Devices 
+All sub chapters of 4 as a reference 
+5. Descriptors (as a reference) 
+5.1 Standard USB Descriptor Definitions 
+5.1.1 Device Descriptor 
+5.1.2 Configuration Descriptor 
+5.1.3 Interface Descriptors 
+5.1.4 Endpoint Descriptors 
+5.2 Class-Specific Descriptors 
+5.2.1 Class-Specific Device Descriptor 
+5.2.2 Class-Specific Configuration Descriptor 
+5.2.3 Functional Descriptors 
+5.2.3.1 Header Functional Descriptor 
+5.2.3.2 Call Management Functional Descriptor 
+5.2.3.3 Abstract Control Management Functional Descriptor 
+6. Communication Interface Class Messages 
+6.1 Overview 
+6.2 Management Element Requests 
+6.2.12 SetLineCoding 
+6.2.13 GetLineCoding 
+6.2.14 SetControlLineState 
+6.3 Notification Element Notifications 
+6.3.5 SerialState 
+
+
+Additional INF file tips from Greg C:
+
+Delete the "LayoutFile=layout.inf" line which is for INF files provided with the operating system. 
+
+Add a "CatalogFile=catalog.cat" line in the Version section. (Use a null file of that name on your install disk until you get a real cat file from Microsoft.) 
+
+Use the ChkInf tool provided in the DDK.
