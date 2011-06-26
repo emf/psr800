@@ -1,100 +1,28 @@
-Oh god..
 
-this is what i've done to (hopefully) make this scanner work on OSX.
+Notes about the PSR-800 scanner:
 
-The device information is:
-Full Speed device @ 4 (0xFD313000): .............................................   Composite device: "GRECOM PSR-8OO  Scanner\000\000\000\000\000"
-    Port Information:   0x0018
-           Not Captive
-           External Device
-           Connected
-           Enabled
-    Device Descriptor   
-        Descriptor Version Number:   0x0200
-        Device Class:   0   (Composite)
-        Device Subclass:   0
-        Device Protocol:   0
-        Device MaxPacketSize:   8
-        Device VendorID/ProductID:   0x0C97/0x0008   (unknown vendor)
-        Device Version Number:   0x0001
-        Number of Configurations:   1
-        Manufacturer String:   1 "GRECOM\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
-        Product String:   2 "GRECOM PSR-8OO  Scanner\000\000\000\000\000"
-        Serial Number String:   0 (none)
-    Configuration Descriptor: .......................................   "GRECOM PSR-8OO  Scanner\000\000\000\000\000"
-        Length (and contents):   89
-            Raw Descriptor (hex)    0000: 09 02 59 00 02 01 02 C0  FA 09 04 00 00 02 08 06  
-            Raw Descriptor (hex)    0010: 50 00 07 05 81 02 40 00  01 07 05 01 02 40 00 01  
-            Raw Descriptor (hex)    0020: 08 11 01 02 02 02 01 00  09 04 01 00 03 02 02 01  
-            Raw Descriptor (hex)    0030: 00 05 24 00 10 01 04 24  02 02 05 24 06 00 01 05  
-            Raw Descriptor (hex)    0040: 24 01 00 01 07 05 82 03  08 00 02 07 05 03 02 40  
-            Raw Descriptor (hex)    0050: 00 00 07 05 83 02 40 00  00 
-        Number of Interfaces:   2
-        Configuration Value:   1
-        Attributes:   0xC0 (self-powered)
-        MaxPower:   500 ma
-        Interface #0 - Mass Storage/SCSI   
-            Alternate Setting   0
-            Number of Endpoints   2
-            Interface Class:   8   (Mass Storage)
-            Interface Subclass;   6   (SCSI)
-            Interface Protocol:   80
-            Endpoint 0x81 - Bulk Input   
-                Address:   0x81  (IN)
-                Attributes:   0x02  (Bulk no synchronization data endpoint)
-                Max Packet Size:   64
-                Polling Interval:   1 ms
-            Endpoint 0x01 - Bulk Output   
-                Address:   0x01  (OUT)
-                Attributes:   0x02  (Bulk no synchronization data endpoint)
-                Max Packet Size:   64
-                Polling Interval:   1 ms
-        Raw Descriptor (hex)   0000: 08 11 01 02 02 02 01 00  
-        Interface #1 - Communications-Control   
-            Alternate Setting   0
-            Number of Endpoints   3
-            Interface Class:   2   (Communications-Control)
-            Interface Subclass;   2
-            Interface Protocol:   1
-            Comm Class Header Functional Descriptor   
-                Raw Descriptor (hex)   0000: 05 24 00 10 01 
-            Comm Class Abstract Control Management Functional Descriptor   
-                Raw Descriptor (hex)   0000: 04 24 02 02 
-            Comm Class Union Functional Descriptor   
-                Raw Descriptor (hex)   0000: 05 24 06 00 01 
-            Comm Class Call Management Functional Descriptor   
-                Raw Descriptor (hex)   0000: 05 24 01 00 01 
-            Endpoint 0x82 - Interrupt Input   
-                Address:   0x82  (IN)
-                Attributes:   0x03  (Interrupt no synchronization data endpoint)
-                Max Packet Size:   8
-                Polling Interval:   2 ms
-            Endpoint 0x03 - Bulk Output   
-                Address:   0x03  (OUT)
-                Attributes:   0x02  (Bulk no synchronization data endpoint)
-                Max Packet Size:   64
-                Polling Interval:   0 ms
-            Endpoint 0x83 - Bulk Input   
-                Address:   0x83  (IN)
-                Attributes:   0x02  (Bulk no synchronization data endpoint)
-                Max Packet Size:   64
-                Polling Interval:   0 ms
+1)
+	it does not support remote control, even a little.  Secret source says so.  Buy a different radio. Please.
+You should not support this silliness. Radios should support bare minimum remote control.  Particularly if it's just a
+minor firmware difference from the psr-310/psr-410 radio.   Don't buy this radio.  Really.   I'm providing this software
+to help other idiots like me that have _already_ bought this stupid thing and now have found they can't really do much
+useful stuff with it when plugged into the computer.
+
+2)
+	The serial port only supports CCdump output.  It does this on windows just fine.  It's using a composite CDC ACM IAD
+descriptor, which means it cannot hook to a Macintosh (no IAD support yet. 2011. really.)... It SHOULD work on Linux, but I cannot
+get it to be recognized at all.. Error -22 when probing the thing.  Someone at GRE did the bare minimum required to get Windows
+to see it (typical) and called it a day.   Perhaps that will change someday.  I don't have much hope, and i'll probably have
+bought a new radio by then anyway. See Item #1 above.
+
+So, what does this tool do?
+
+When you plug in your scanner, it creates a usb attached storage device. (the sd card).  This DOES work on all three platforms,
+windows, linux, and OSX  (with the caveat that it's hard to unmount the device without an error dialog on OSX, but it's FAT
+underneath, so it doesn't matter. just yank the wire.)
+
+Anyway, this tool will copy out all the recorded audio files in the REC/ directory, and clean that directory up
+so the scanner is no longer full of recorded data.   They're sunau files, mostly.  we can do a lot with them.
+I provide the metadata in a dictionary, so.. 
 
 
-
-So, it looks to me like the important parts are:
-Vendor 3223 (decimal), Product 8, and Interface 1 for the serial port.
-
-It's an ACM device, so we should be able to get the ACM driver to see it.. 
-
-So, on LINUX, we try:
-	modprobe usbserial vendor=3223 product=8
-and we get:
-[ 1589.958254] usbcore: registered new interface driver usbserial
-[ 1589.958269] USB Serial support registered for generic
-[ 1589.958631] usbserial_generic 2-1:1.1: generic converter detected
-[ 1589.959467] usb 2-1: generic converter now attached to ttyUSB0
-[ 1589.959957] usbcore: registered new interface driver usbserial_generic
-[ 1589.959959] usbserial: USB Serial Driver core
-
-that seems promising.
