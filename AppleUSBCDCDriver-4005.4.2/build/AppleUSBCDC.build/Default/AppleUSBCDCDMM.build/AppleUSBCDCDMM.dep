@@ -1,5 +1,0 @@
-d9700ae51894294b46bf5a54fb3899f9 40ea3e92081cdaa5be2a3bf209912c44 000000004e0513f90000000000000066 102 /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Default/AppleUSBCDCDMM.kext
-000000000172235800000000000078c2 1a3a1a49d21ca8ec5243b1e0234668c9 ffffffffffffffffffffffffffffffff 284948 /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Default/AppleUSBCDCDMM.build/Objects-normal/i386/AppleUSBCDCDMM.o
-a56ce5ac5c060260ae976fd07e7fc908 d56b6b88e1ef1d134e73c5b014408ab7 ffffffffffffffffffffffffffffffff 51004 /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Default/AppleUSBCDCDMM.kext/Contents/MacOS/AppleUSBCDCDMM
-000000004e0513f800000000000001a7 bf56ffe5c16d9a2cfcd4de305d39d8a4 ffffffffffffffffffffffffffffffff 3700 /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Default/AppleUSBCDCDMM.build/Objects-normal/i386/AppleUSBCDCDMM_info.o
-00000000000000000000000000000000 a97784c1a57d3638a65bf0349107da46 ffffffffffffffffffffffffffffffff 1600 /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Default/AppleUSBCDCDMM.kext/Contents/Info.plist

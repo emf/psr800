@@ -1,6 +1,0 @@
-ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff 000000004e0513f60000000000000066 102 /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Default/AppleUSBCDCACMData.kext
-000000004a3521e00000000000030ada ea29dd78d901e050e91512ede2bb1189 ffffffffffffffffffffffffffffffff 0 /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Default/AppleUSBCDCACMData.build/Objects-normal/i386/AppleUSBCDCACMData.o
-ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff 0 /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Default/AppleUSBCDCACMData.kext/Contents/MacOS/AppleUSBCDCACMData
-0000000041c355110000000000000174 dee8389e3b9d9184df1a636ad7c6e405 ffffffffffffffffffffffffffffffff 372 /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Default/AppleUSBCDCACMData.kext/Contents/Resources/English.lproj/Localizable.strings
-000000004e0513f600000000000001ab e9038a2e5249697ec6e1ec7f2fc3fdeb ffffffffffffffffffffffffffffffff 3700 /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/AppleUSBCDC.build/Default/AppleUSBCDCACMData.build/Objects-normal/i386/AppleUSBCDCACMData_info.o
-00000000000000000000000000000000 fbe4fb6f41ff38dd4f8f7e838377feab ffffffffffffffffffffffffffffffff 8529 /Users/emf/proj/psr800/AppleUSBCDCDriver-4005.4.2/build/Default/AppleUSBCDCACMData.kext/Contents/Info.plist
