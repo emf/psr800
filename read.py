@@ -26,7 +26,7 @@ class Au_read:
         self._hdr_size = int(sunau._read_u32(file))
         if self._hdr_size < 24:
             raise sunau.Error, 'header size too small'
-        print self._hdr_size
+        #print self._hdr_size
         if self._hdr_size > 512:
             raise sunau.Error, 'header size ridiculously large'
         self._data_size = sunau._read_u32(file)
@@ -60,6 +60,7 @@ class Au_read:
     def getmetadata(self):
     	from datetime import datetime
         d = {}
+        print self._info
         d['datetime'] = datetime( ord(self._info[6]) + 1900, ord(self._info[5]) + 1,  ord(self._info[4]), 
         									ord(self._info[3]), ord(self._info[2]), ord(self._info[1]))
         #d['type'] -- dunno where this is stored, may be a database lookup.
@@ -142,12 +143,19 @@ class Au_read:
     def close(self):
         self._file = None
 
-
-
-
 sunau.Au_read = Au_read
 
-f = sunau.open('000.AU','r')
-print f.getmetadata()
-f.close()
+import os
+import fnmatch
+
+inputdir = "."
+outputdir = "../tmp"
+
+for root, dirs, files in os.walk(inputdir):
+	for filename in fnmatch.filter(files, "*.AU"):
+		objname = os.path.join(root, filename)
+		print objname
+		f = sunau.open(objname, 'r')
+		print f.getmetadata()
+		f.close()
 
