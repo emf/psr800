@@ -53,20 +53,18 @@ class Au_read:
         self._framesize = self._framesize * self._nchannels
         if self._hdr_size > 24:
             self._info = file.read(self._hdr_size - 24)
-            self._info = self._info.split('\x00')		# null delimited metadata
         else:
             self._info = ''
 
     def getmetadata(self):
     	from datetime import datetime
         d = {}
-        print self._info
-        d['datetime'] = datetime( ord(self._info[6]) + 1900, ord(self._info[5]) + 1,  ord(self._info[4]), 
-        									ord(self._info[3]), ord(self._info[2]), ord(self._info[1]))
+        d['datetime'] = datetime( ord(self._info[11]) + 1900, ord(self._info[9]) + 1,  ord(self._info[7]),
+        									ord(self._info[5]), ord(self._info[3]), ord(self._info[1]))
         #d['type'] -- dunno where this is stored, may be a database lookup.
-        #d['length'] -- may be computed. 
-        d['alpha tag'] = self._info[13]
-        d['freq'] = self._info[38]
+        #d['length'] -- may be computed.
+        d['alpha tag'] = self._info[19:self._info.find('\x00',19)]
+        d['freq'] = self._info[53:64]
         return d
 
     def getfp(self):
